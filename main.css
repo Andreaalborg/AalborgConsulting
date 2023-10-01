@@ -1,0 +1,451 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f400;
+    color: #ffffff;
+    line-height: 1.6;
+    background-image: url('asfalt--light--1920x1080 (1).png');
+    background-repeat: repeat; /* This ensures the texture covers the entire page */
+    background-size: auto; /* Adjust as needed to scale the texture */
+}
+
+header {
+    background: no-repeat center center/cover;
+    height: 80vh;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #000000d9;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 15px rgb(0, 0, 0);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: #333;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 2px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(214, 213, 213);
+    color: #202020;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+.about, .services {
+    padding: 4rem 10%;
+    color: #d1d1d1;
+}
+
+.service-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10%;
+    background-color: #333;
+    color: white;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ddd;
+}
+
+.footer-bottom {
+    background-color: #222222;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.hero-header {
+    /* Set the dimensions of the section */
+    width: 100%;
+    height: 600px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column; /* This will stack the children vertically */
+    align-items: center; /* Horizontally center the children */
+    justify-content: center; /* Vertically center the children */
+    position: relative;
+    top: -80px;
+    
+    /* Set the background image on the right side */
+    background-image: url('');
+    background-position: right center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges; /* or 'pixelated' */
+    background-size: cover;
+    
+}
+
+
+h1 img {
+    vertical-align: middle;
+}
+
+
+/* Stil for knappen med klassen .prat */
+.menu .prat a {
+    background-color: yellow;
+    color: #333; /* Sett tekstfargen til mørk (juster etter behov) */
+}
+
+/* Overskriv hover-effekten for knappen med klassen .prat */
+.menu .prat a:hover {
+    background-color: rgb(212, 212, 0);
+    color: #333; /* Behold tekstfargen mørk */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Bruker Montserrat som font */
+    color: #333;
+    line-height: 1.6;
+}
+
+.about-banner {
+    background: url('path_to_your_banner_image.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.about-us {
+    padding: 20px;
+    background-color: #f9f9f9; /* En lys bakgrunnsfarge */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enkel skygge for dybde */
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.team-member {
+    width: calc(33.33% - 20px);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enkel skygge for dybde */
+    transition: transform 0.3s; /* Glatt overgangseffekt */
+}
+
+.team-member:hover {
+    transform: translateY(-10px); /* Løft kortet litt når musen er over */
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s, transform 1s;
+}
+
+.slide-in.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-slides {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transition: transform 0.5s;
+}
+
+.carousel-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+
+
+
+.image-box {
+    width: 100%;
+    height: 300px; /* eller ønsket høyde */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container for the 3D boxes */
+.boxes-container {
+    display: flex;
+    justify-content: center; /* Endret til center for å få boksene enda nærmere hverandre */
+    align-items: center;
+    margin: 50px 0;
+    perspective: 1200px;
+}
+
+/* Style for each box */
+.box {
+    width: 600px; /* Gjort boksen enda bredere */
+    height: 350px; /* Gjort boksen høyere */
+    perspective: 1500px;
+    transition: transform 0.5s;
+    cursor: pointer;
+    margin: 0 15px; /* Redusert margin for å få boksene enda nærmere hverandre */
+   
+}
+
+/* Inner content of the box */
+.box-content {
+    width: 100%;
+    height: 100%;
+    background-color: #0a0a0a;
+    border: 1px solid #333;
+    border-radius: 15px;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.4), 0 0 50px rgba(0, 0, 0, 0.3) inset; /* Oppdatert box-shadow */
+    transform-style: preserve-3d;
+    transform: rotateX(0) rotateY(0);
+    transition: transform 0.5s, box-shadow 0.5s;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2)); /* Oppdatert bakgrunnsbilde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Dette vil sørge for at elementene inni boksen (f.eks. tekst, knapper) er stablet vertikalt. */
+    position: relative; /* Dette gjør at vi kan posisjonere knappen relativt til boksen */
+}
+
+
+/* Hover effect to make the box pop */
+.box:hover .box-content {
+    transform: scale(1.05); /* Bare skalerer boksen for å fremheve den */
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.4), 0 0 50px rgba(0, 0, 0, 0.3) inset;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.box-logo {
+    width: 80px; /* eller ønsket bredde */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* sentrerer logoen horisontalt og gir litt plass under */
+    border: none; /* fjerner eventuell ramme */
+}
+
+
+.box {
+    /* Dine eksisterende stiler for .box her */
+    position: relative; /* Gjør det mulig å posisjonere innholdet relativt til denne boksen */
+    /* Skjuler alt innhold som går utenfor boksens grenser */
+}
+
+.box-content img {
+    display: block; /* Fjerner standard marger rundt bildet */
+    max-width: 100%; /* Begrenser bildets bredde til boksens bredde */
+    max-height: 100%; /* Begrenser bildets høyde til boksens høyde */
+    margin: auto; /* Sentraliserer bildet horisontalt */
+    position: absolute; /* Gjør det mulig å posisjonere bildet relativt til .box */
+    top: 20%; /* Setter toppkanten av bildet til midten av boksen */
+    left: 50%; /* Setter venstre kant av bildet til midten av boksen */
+    transform: translate(-50%, -50%) scale(1.1); /* Øker bildets størrelse med 10% og sentraliserer det */
+    z-index: 1; /* Sørger for at bildet ligger over annet innhold i boksen */
+}
+
+.box-content p {
+    position: relative; /* Dette gjør at z-index fungerer for teksten. */
+    z-index: 2; /* Dette setter teksten til en høyere stabling enn bildet. */
+    color: #d1d1d1;
+    font-size: 24px; /* Juster denne verdien etter ønske */
+}
+
+.box-button {
+    position: absolute; /* Plasserer knappen i forhold til nærmeste relative (eller absolutte) forelder */
+    bottom: 10px; /* Plasserer knappen 10px fra bunnen av boksen */
+    left: 50%; /* Plasserer venstre kant av knappen i midten av boksen */
+    transform: translateX(-50%); /* Flytter knappen til venstre med halvparten av dens bredde for å sentrere den */
+    
+    padding: 10px 20px; /* Gir litt polstring til knappen for å gjøre den større */
+    background-color: #333; /* Bakgrunnsfarge for knappen */
+    color: #fff; /* Tekstfarge for knappen */
+    border: none; /* Fjerner standard kantlinje */
+    border-radius: 5px; /* Gjør hjørnene litt avrundede */
+    cursor: pointer; /* Endrer musepekeren til en hånd når den er over knappen */
+    transition: background-color 0.3s; /* Legger til en glatt overgangseffekt når bakgrunnsfargen endres */
+}
+
+.box-button:hover {
+    background-color: #555; /* Endrer bakgrunnsfargen når musen er over knappen */
+}
+
+.h1-box{
+    text-align: center; /* Sentrerer teksten */
+    margin-bottom: 20px; /* Gir litt plass under overskriften før boksene starter */
+    font-size: 2em; /* Juster skriftstørrelsen etter behov */
+    color: #ffffff; /* Endre fargen etter behov */
+}
+
+.box-pic-3 {
+    margin-left: -20px
+}
